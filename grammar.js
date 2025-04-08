@@ -10,6 +10,8 @@
 module.exports = grammar({
   name: "quasar",
 
+  word: $ => $.identifier,
+
   rules: {
     source_file: $ => repeat($._statement),
 
